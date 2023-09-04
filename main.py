@@ -21,7 +21,7 @@ import logging
 
 import StringIO
 import pythontidy as pt
-template_path=os.path.dirname(__file__) + "/templates"
+template_path = f"{os.path.dirname(__file__)}/templates"
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(template_path))
 logging.debug("The path for templates is")
